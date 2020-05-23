@@ -1,6 +1,6 @@
 #vpc
 data "aws_vpc" "vpc" {
-  id = "vpc-0545ca2f73a9ee7dd"
+  id = "vpc-xxxxxxxxx"   #enter your VPC ID or you can make a variable and use that variable here
 }
 
 # #Existing AWS ROle
@@ -45,7 +45,7 @@ module "node_group" {
   
 }
 
-
+# You can uncomment below code to create IAM ROles, Security Group, Subnet, Internet Gateway, NAT GAteway.
 
 
 # data "aws_iam_role" "iam-role2" {
