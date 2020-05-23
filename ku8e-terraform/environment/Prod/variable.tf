@@ -5,7 +5,7 @@ variable "region"{
     default    = "ap-southeast-1"
 }
 variable "vpc_id"{
-    default = "vpc-0545ca2f73a9ee7dd"
+    default = "vpc-xxxxxxxxx"   # paste you VPC ID here.
 }
 variable "kubernetes_version"{
     default = "1.14"
@@ -25,13 +25,13 @@ variable "instance-type"{
 
 variable "subnet-ids"{
     type = list(string)
-    default = ["subnet-03afb113e58e74af5","subnet-05b4ed9daa1d37958"]
+    default = ["subnet-xxxxxxxxxx","subnet-yyyyyyyyyy"]    # add your subnets ID
 }
 
 
 #Security Group
 variable "security-group-id" {
-    default = "sg-0711a640456a588ee"
+    default = "sg-xxxxxxxxxxxxxxx"    # add your security Group ID
 }
 
 
