@@ -36,7 +36,7 @@ resource "aws_autoscaling_group" "ecs-autoscaling-group" {
   
     tag {
     key                 = "eks_testing"
-    value               = "HU2020-testing-eks"
+    value               = "eks-deploy"
     propagate_at_launch = false
   }
   }
