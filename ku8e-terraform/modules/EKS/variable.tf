@@ -7,7 +7,7 @@ variable "enabled"{
 variable "name"{}
 # variable "region"{}
 variable "vpc-id"{
-    default = "vpc-0545ca2f73a9ee7dd"
+    default = "vpc-xxxxxxxx"
 }
 variable "kubernetes-version"{}
 # variable "kubeconfig_path"{}
@@ -23,10 +23,10 @@ variable "subnets"{
 
 
 variable "public-subnet-id" {
-  default = "subnet-03afb113e58e74af5"
+  default = "subnet-xxxxxxxxxxx"
 }
 variable "private-subnet-id" {
-  default = "subnet-05b4ed9daa1d37958"
+  default = "subnet-yyyyyyyyyyyyy"
 }
 
 #Security Group
