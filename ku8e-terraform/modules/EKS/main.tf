@@ -1,15 +1,11 @@
-# data "aws_vpc" "vpc" {
-#   id = "vpc-0545ca2f73a9ee7dd"
-# }
-
 #Existing AWS ROle
 data "aws_iam_role" "iam-role" {
-  name = "eksrole"
+  name = "eksrole" #role name
 }
 
 
 data "aws_iam_role" "iam-role2" {
-  name = "eks_NodeInstanceRole"
+  name = "eks_NodeInstanceRole"    #role name
 }
 
 #Security group
@@ -55,6 +51,6 @@ resource "aws_eks_cluster" "eks-cluster" {
   tags={
       Environment = "Prod"
       Name = "ku8e-eks-cluster"
-      Value = "HU2020-product-ku8e"
+      Value = "product-ku8e"
   }
 }
