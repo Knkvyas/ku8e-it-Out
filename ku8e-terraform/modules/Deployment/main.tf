@@ -24,7 +24,7 @@ resource "kubernetes_deployment" "example" {
 
       spec {
         container {
-          image = "portus.hashedin.com/shubham.pal/myapp:latest"
+          image = "image_name/myapp:latest"
           name  = "ku8e-container"
       }
     }
