@@ -18,7 +18,7 @@ resource "aws_eks_node_group" "ku8e-node-group" {
   tags={
       Environment = "Prod"
       Name = "ku8e-eks-group-node"
-      Value = "HU2020-product-ku8e"
+      Value = "product-ku8e"
   }
 
 #   depends_on = [module.eks]
