@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "s3-bucket" {
   tags = {
     Name        = "ku8e-s3-product"
     Environment = "Prod"
-    tag         = "HU2020-product-ku8e"
+    tag         = "product-ku8e"
   }
 }
 
